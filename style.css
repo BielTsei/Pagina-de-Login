@@ -44,7 +44,7 @@ h4 {
 }
 
 input {
-  width: 380px;
+  width: 340px;
   height: 34px;
   border-radius: 4px;
   outline: none;
@@ -65,7 +65,7 @@ p {
 }
 
 button {
-  width: 380px;
+  width: 340px;
   height: 30px;
   background-color: var(--color-blue);
   outline: none;
@@ -74,4 +74,71 @@ button {
   margin: 0 auto;
   color: white;
   font-weight: 600;
+}
+
+@media (min-width: 280px) and (max-width: 769px) {
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #container {
+    display: none;
+  }
+
+  #infos {
+    width: 100%;
+    background-color: var(--color-blue);
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin-bottom: 14px;
+  }
+
+  #form {
+    background-color: rgba(255, 255, 255, 0.365);
+    backdrop-filter: blue(5px);
+    width: 260px;
+    height: 200px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    padding: 6px;
+  }
+
+  input {
+    width: 240px;
+    height: 34px;
+  }
+
+  button {
+    width: 240px;
+    background-color: white;
+    color: var(--color-blue);
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1180px) {
+  #container {
+    width: 55%;
+    height: 100vh;
+  }
+
+  #infos {
+    width: 45%;
+  }
+
+  button {
+    width: 320px;
+  }
+
+  input {
+    width: 320px;
+  }
 }
